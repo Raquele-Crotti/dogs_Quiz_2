@@ -1,0 +1,7 @@
+<h1>Enter Your Dog's Name</h1>
+<%= simple_form_for @dog do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
