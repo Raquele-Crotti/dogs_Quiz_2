@@ -10,7 +10,7 @@ class DogsController < ApplicationController
 
   def create
     Dog.create(dog_params)
-    redirect_to root_dogs_path
+    redirect_to root_path
   end
 
   private
