@@ -1,8 +1,16 @@
 <head>
-  <h1><%= @dog.name %></h1>
-  <h2><%= @dog.description %></h2>
+
 </head>
 <body>
-  <%= image_tag 'dogs.jpg', class: 'center' %>
+  <% if @dog.nil? %>
+    <h1>No dogs yet! Please enter your dog's info!</h1>
+  <% else %>
+    <%= image_tag 'dogs.jpg', class: 'center' %>
+    <br />
+    <br />
+
+    <h1><%= @dog.name %></h1>
+    <h2><%= @dog.description %></h2>
+  <% end %>
 </body>
  
